@@ -1,6 +1,7 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import {Link} from 'react-router-dom'
 import {BsPlusSquare, BsDashSquare} from 'react-icons/bs'
 
 import CartContext from '../../context/CartContext'
@@ -91,9 +92,11 @@ class ProductItemDetails extends Component {
         className="error-view-image"
       />
       <h1 className="product-not-found-heading">Product Not Found</h1>
-      <button type="button" className="button">
-        Continue Shopping
-      </button>
+      <Link to="/products">
+        <button type="button" className="button">
+          Continue Shopping
+        </button>
+      </Link>
     </div>
   )
 

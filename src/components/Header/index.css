@@ -30,7 +30,9 @@
 .nav-bar-mobile-logo-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -94,7 +96,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 70px;
+  height: 50px;
   background-color: #e6f6ff;
   flex: 1;
   list-style-type: none;
@@ -178,4 +180,8 @@
   .cart-count-badge {
     background-color: #e6f6ff;
   }
+}
+
+.nav-bar-image {
+  width: 30px;
 }

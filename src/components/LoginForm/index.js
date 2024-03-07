@@ -94,15 +94,13 @@ class LoginForm extends Component {
   render() {
     const {showSubmitError, errorMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
-
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
-
     return (
       <div className="login-form-container">
         <img
-          src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
+          src="https://res.cloudinary.com/djvdeuqj1/image/upload/v1709197425/guptas-trendz-high-resolution-logo-transparent_hldw1y.png"
           className="login-website-logo-mobile-img"
           alt="website logo"
         />
